@@ -32,7 +32,7 @@ Created by [Deity#0228] and [Abstract#8007]
 
 ### Get the Library
 ```lua
-local Mercury = loadstring(game:HttpGet(https://raw.githubusercontent.com/localityyy/mercury-lib/refs/heads/master/src.lua"))()
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/localityyy/mercury-lib/refs/heads/master/src.lua"))()
 ```
 
 ### Create the GUI

@@ -3076,7 +3076,7 @@ function Library:keybind(options)
 					listening = false
 				end
 			else
-				if key.KeyCode == options.Keybind then
+				if key.KeyCode == options.Keybind and not gameProcessed then
 					options.Callback()
 				end
 			end

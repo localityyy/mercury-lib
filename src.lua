@@ -409,10 +409,6 @@ end
 
 local updateSettings = function() end
 
-function Library:set_status(txt)
-	self.statusText.Text = txt
-end
-
 function Library:create(options)
 
 	local settings = {
@@ -919,6 +915,10 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 	return mt
+end
+
+function Library:set_status(txt)
+	self.statusText.Text = txt
 end
 
 function Library:notification(options)

@@ -409,6 +409,10 @@ end
 
 local updateSettings = function() end
 
+function Library:set_status(txt)
+	self.statusText.Text = txt
+end
+
 function Library:create(options)
 
 	local settings = {
@@ -654,7 +658,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Status | Idle",
+		Text = "Idle",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -915,10 +919,6 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 	return mt
-end
-
-function Library:set_status(txt)
-	self.status.Text = txt
 end
 
 function Library:notification(options)

@@ -918,7 +918,7 @@ function Library:create(options)
 end
 
 function Library:set_status(txt)
-	self.statusText.Text = txt
+	self.status.Text = txt
 end
 
 function Library:notification(options)
